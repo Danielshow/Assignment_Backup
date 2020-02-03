@@ -1,0 +1,37 @@
+➜  python3 tryme4.py
+Printing nine lines
+.
+.
+.
+.
+.
+.
+.
+.
+.
+Calling clearscreen and print 25 lines
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.

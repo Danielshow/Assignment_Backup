@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>University of the People: Log in to the site</title>
+    <link rel="shortcut icon" href="https://my.uopeople.edu/theme/image.php/lambda/theme/1580665829/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"789f8a0b4d",applicationID:"385082689"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1158.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="keywords" content="moodle, University of the People: Log in to the site" />
+<link rel="stylesheet" type="text/css" href="https://my.uopeople.edu/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://my.uopeople.edu/theme/styles.php/lambda/1580665829_1579552557/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/my.uopeople.edu","sesskey":"TKaPdJMhyv","themerev":"1580665829","slasharguments":1,"theme":"lambda","iconsystemmodule":"core\/icon_system_standard","jsrev":"1580665829","admin":"admin","svgicons":true,"usertimezone":"America\/Bogota","contextid":1};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/my.uopeople.edu\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/my.uopeople.edu\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/my.uopeople.edu\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/my.uopeople.edu\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/my.uopeople.edu\/theme\/yui_combo.php?m\/1580665829\/","combine":true,"comboBase":"https:\/\/my.uopeople.edu\/theme\/yui_combo.php?","ext":false,"root":"m\/1580665829\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-event":{"requires":["event-custom"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_choice-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-modform":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-rooms":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_bigbluebuttonbn-imports":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-recordings":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_bigbluebuttonbn-broker":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_checklist-linkselect":{"requires":["node","event-valuechange"]},"moodle-mod_customcert-rearrange":{"requires":["dd-delegate","dd-drag"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_oublog-savecheck":{"requires":["base","node","io","panel","moodle-core-notification-alert"]},"moodle-mod_oublog-tagselector":{"requires":["base","node","autocomplete","autocomplete-filters","autocomplete-highlighters"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-block_xp-rulepicker"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-format_grid-gridkeys":{"requires":["event-nav-keys"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_kalturamedia-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_styles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_templates-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_warpwire-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-local_kaltura-lticontainer":{"requires":["base","node"]},"moodle-local_kaltura-ltipanel":{"requires":["base","node","panel","node-event-simulate"]},"moodle-local_kaltura-ltiservice":{"requires":["base","node","node-event-simulate"]},"moodle-local_kaltura-ltitinymcepanel":{"requires":["base","node","panel","node-event-simulate"]}}},"gallery":{"name":"gallery","base":"https:\/\/my.uopeople.edu\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/my.uopeople.edu\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1580665829\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/my.uopeople.edu\/lib\/javascript.php\/1580665829\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/my.uopeople.edu\/lib\/javascript.php\/1580665829\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.2\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<div id="overlay" class='hidden'></div>
+
+<style>
+#page-footer .footnote {
+    float: none;
+}
+#myButton {
+marginLeft:100px;
+}
+#overlay {
+ position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1000000;
+    pointer-events:none;
+        
+}
+.hova {
+  background-color:rgba(0,0,0,0.5);
+opacity:0.9;
+}
+.hidden { display: none; }
+</style>
+<script>
+var isclicked = false;
+window.onload = function() {	
+	
+	if ($(".forumsearch")[0]){
+    $( ".forumsearch" ).append( '<button type="button" id="myButton" class="hidden" onclick="clickHandler()" >Reporting Tool</button>' );
+var rowId = $("#nav-notification-popover-container").attr("data-userid");
+} else {
+$( ".breadcrumb-button" ).append( '<button type="button" id="myButton" class="hidden"  onclick="clickHandler()" >Reporting Tool</button>' );
+var rowId = $("#nav-notification-popover-container").attr("data-userid");
+}
+
+    $.ajax({
+	url:"https://students-violations.uopeople.edu/api/Instructor/ValidateMoodleInstructorInCRM?UserID=" + rowId ,
+        success:function(){
+           $('#myButton').removeClass('hidden');
+        }
+    });
+
+
+ 
+
+}
+
+
+function clickHandler(event) {
+if(isclicked == true)
+{		$("#myButton").blur();
+        isclicked = false;
+			$('body').children().mouseover(function(e){
+    
+    $(e.target).removeClass("hova");
+  return false;
+}).mouseout(function(e) {
+    $(this).removeClass("hova");
+});
+		window.removeEventListener("click", whichElement);
+		window.removeEventListener("keypress", myEventHandler);
+
+}else{
+	$('body').children().mouseover(function(e){
+    $(".hova").removeClass("hova");     
+    $(e.target).addClass("hova");
+
+  return false;
+}).mouseout(function(e) {
+    $(this).removeClass("hova");
+});
+   
+	window.addEventListener("click", whichElement, event);
+	window.addEventListener("keyup", myEventHandler, event);
+	}
+}
+function myEventHandler(event) {
+	var e = window.event;	
+    var keyCode = event.keyCode || event.charCode;
+    isEscape = (event.key === "Escape" || event.key === "Esc");	
+    if (keyCode == 27 || isEscape) 
+	{
+		$(".hova").removeClass("hova"); 
+		isclicked = false;
+		$('body').children().mouseover(function(e){
+    
+        $(e.target).removeClass("hova");
+		
+  
+		}).mouseout(function(e) {
+		$(this).removeClass("hova");
+		});
+		window.removeEventListener("click", whichElement);
+		window.removeEventListener("keypress", myEventHandler);
+		$("#myButton").blur();
+
+	}
+    }
+	
+function safe_tags(str) {
+    str.replace(/[^\x20-\x7E]/gmi, "");    
+    return str;
+}	
+
+function whichElement(e) {
+  
+  var targ;
+  if (!e) {
+    var e = window.event;
+  }
+  if (e.target) {
+    targ=e.target;
+  } else if (e.srcElement) {
+    targ=e.srcElement;
+  }
+  var tname;
+  tname = targ.tagName;
+
+  if(targ.id == 'myButton')
+  {
+	    isclicked = true;      
+	    
+  }
+  else 
+  {
+    e.preventDefault(); 
+	var Contentt = targ.outerHTML;
+	var Content = safe_tags(Contentt);
+	var Content = encodeURIComponent(Content);
+
+	 console.log(Content);
+	  var currentLocationn = window.location;
+	  
+	  var currentLocation = encodeURIComponent(currentLocationn);
+	  var rowId = $("#nav-notification-popover-container").attr("data-userid");
+	  
+	  var param = { 'ID' : rowId, 'Content' : Content, 'URL':currentLocation };    	  
+      OpenWindowWithPost("https://students-violations.uopeople.edu/ReportViolation/ReportStudentViolation",
+      "width=1265,height=980,left=400,resizable=yes,scrollbars=yes",
+      "NewFile", param);
+	 	  
+	 $('body').children().mouseover(function(e){
+    
+     $(e.target).removeClass("hova");
+     return false;
+	}).mouseout(function(e) {
+    $(this).removeClass("hova");
+	});
+	  window.removeEventListener("click", whichElement);
+	  window.removeEventListener("keypress", myEventHandler);
+      isclicked = false; 
+	
+	
+  }
+}
+  function OpenWindowWithPost(url, windowoption, name, params)
+   {
+            var form = document.createElement("form");
+            form.setAttribute("method", "post");
+            form.setAttribute("action", url);
+            form.setAttribute("target", name);
+
+            for (var i in params) {
+                if (params.hasOwnProperty(i)) {
+                    var input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.name = i;
+                    input.value = params[i];
+                    form.appendChild(input);
+                }
+            }
+           
+            document.body.appendChild(form);
+           
+            //note I am using a post.htm page since I did not want to make double request to the page
+           //it might have some Page_Load call which might screw things up.
+            window.open("", name, windowoption);
+           
+            form.submit();
+           
+            document.body.removeChild(form);
+    }
+
+
+</script><meta name="robots" content="noindex" />    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400%7COpen+Sans:700" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" crossorigin="anonymous">
+</head>
+
+<body  id="page-login-index" class="format-site  path-login dir-ltr lang-en yui-skin-sam yui3-skin-sam my-uopeople-edu pagelayout-login course-1 context-1 notloggedin mobiletheme  column-1" >
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script type="text/javascript" src="https://my.uopeople.edu/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="https://my.uopeople.edu/theme/jquery.php/core/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://my.uopeople.edu/lib/javascript.php/1580665829/lib/javascript-static.js"></script>
+<script type="text/javascript" src="https://my.uopeople.edu/theme/javascript.php/lambda/1580665829/head"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<div id="wrapper"  >
+
+
+    	<div class="container-fluid socials-header"> 
+    	
+	<div class="socials row-fluid">
+    
+    		<div class="span12"> 
+		        	<div class="social_icons pull-right">
+                <a class="social fab fa-facebook" href='https://www.facebook.com/UoPeople' target='_blank'> </a>                                <a class="social fab fa-twitter" href='https://twitter.com/UoPeople' target='_blank'> </a>                                                <a class="social fab fa-instagram" href='https://www.instagram.com/uopeople.official' target='_blank'> </a>                <a class="social fab fa-youtube" href='https://www.youtube.com/user/UoPeople' target='_blank'> </a>                <a class="social fab fa-linkedin" href='https://www.linkedin.com/edu/school?id=42066&trk=tyah&trkInfo=tarId%3A1398693253238%2Ctas%3Auniversity%20of%20the%20people%2Cidx%3A3-2-4' target='_blank'> </a>            </div>
+        </div>
+        
+    </div>
+        </div>
+
+<header id="page-header" class="clearfix">              	
+		<div class="container-fluid">    
+	<div class="row-fluid">
+
+				<div class="span6">
+			<div class="logo-header">
+				<a class="logo" href="https://my.uopeople.edu" title="Home">
+					<img src="//my.uopeople.edu/pluginfile.php/1/theme_lambda/logo/1580665829/logo_uopeople.png" class="img-responsive" alt="logo" />				</a>
+			</div>
+		</div>
+		      	
+
+		<div class="span6 login-header">
+			<div class="profileblock">
+
+				
+				<form class="navbar-form pull-right" method="post" action="https://my.uopeople.edu/login/index.php?authldap_skipntlmsso=1">
+						<div id="block-login">
+							<div id="user"><i class="fas fa-user"></i></div>
+							<label for="inputName" class="lambda-sr-only">Username</label>
+							<input type="hidden" name="logintoken" value="sQSsr6BufDre1YJRLU2spk8d6ZxAhS2s" />							<input id="inputName" class="span2" type="text" name="username" placeholder="Username">
+								<div id="pass"><i class="fas fa-unlock-alt"></i></div>
+								<label for="inputPassword" class="lambda-sr-only">Password</label>
+								<input id="inputPassword" class="span2" type="password" name="password" placeholder="Password">
+									<button type="submit" id="submit"><span class="lambda-sr-only">Log in</span></button>
+								</div>
+
+								<div class="forgotpass">
+																		<a target="_self" href="https://my.uopeople.edu/login/forgot_password.php">Forgotten your username or password?</a>
+									 
+								</div>
+
+							</form>
+							
+							
+						</div>
+					</div>
+
+				</div>
+			</div>               
+</header>
+<header class="navbar">
+    <nav class="navbar-inner">
+        <div class="container-fluid">
+            <a class="brand" href="https://my.uopeople.edu">Home</a>            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse collapse">
+            	<ul class="nav">
+                <ul class="nav"><li class="dropdown"><a href="https://my.uopeople.edu/mod/book/view.php?id=144740&amp;chapterid=152713" class="dropdown-toggle" data-toggle="dropdown" title="Resources">Resources<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="UoPeople Library" href="https://my.uopeople.edu/mod/book/view.php?id=144740&amp;chapterid=152716">UoPeople Library</a></li><li><a title="Orientation Videos" href="https://my.uopeople.edu/mod/book/view.php?id=144740&amp;chapterid=152717">Orientation Videos</a></li><li><a title="OSWC" href="http://my.uopeople.edu/course/view.php?id=770">OSWC</a></li><li><a title="Peer Assessment Office" href="https://my.uopeople.edu/course/view.php?id=343">Peer Assessment Office</a></li><li><a title="Syllabus Repository" href="https://my.uopeople.edu/mod/book/view.php?id=45606">Syllabus Repository</a></li><li><a title="Honors Lists" href="https://my.uopeople.edu/mod/book/view.php?id=144740&amp;chapterid=153967">Honors Lists</a></li></ul><li class="dropdown"><a href="#cm_submenu_2" class="dropdown-toggle" data-toggle="dropdown" title="Links">Links<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="About Us" href="http://www.uopeople.edu/about">About Us</a></li><li><a title="Policies" href="http://www.uopeople.edu/tuition-free/uopeople-policies">Policies</a></li><li><a title="University Catalog" href="http://www.uopeople.edu/about/uopeople/essential-uopeople-documents/university-catalog">University Catalog</a></li><li><a title="Support" href="http://www.uopeople.edu/student-experience/support">Support</a></li><li><a title="Student Portal" href="https://your.uopeople.edu/">Student Portal</a></li></ul><li class="dropdown"><a href="https://my.uopeople.edu/my" class="dropdown-toggle" data-toggle="dropdown" title="Faculty">Faculty<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="Faculty Portal" href="https://your.uopeople.edu">Faculty Portal</a></li><li><a title="New Faculty Resource Center" href="https://my.uopeople.edu/course/view.php?id=1979">New Faculty Resource Center</a></li><li><a title="Office 365" href="https://www.office.com">Office 365</a></li><li><a title="Tipalti" href="https://www.tipalti.com">Tipalti</a></li></ul><li><a title="Contact us" href="https://my.uopeople.edu/mod/book/view.php?id=144740">Contact us</a></li><li class="dropdown langmenu"><a href="" class="dropdown-toggle" data-toggle="dropdown" title="Language">English ‎(en)‎<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="English ‎(en)‎" href="https://my.uopeople.edu/login/index.php?lang=en">English ‎(en)‎</a></li><li><a title="عربي ‎(ar)‎" href="https://my.uopeople.edu/login/index.php?lang=ar">عربي ‎(ar)‎</a></li></ul></ul>                </ul>
+                <ul class="nav pull-right">
+                    <li></li>
+                </ul>
+                
+                                
+                                
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<div id="page" class="container-fluid" >
+
+    <div id="page-content" class="row-fluid">
+        <section id="region-main" class="span12">
+        
+            <span class="notifications" id="user-notifications"></span><div role="main"><span id="maincontent"></span><div class="my-1 my-sm-5"></div>
+<div class="row justify-content-center">
+<div class="col-xl-6 col-sm-8 ">
+<div class="card">
+    <div class="card-block">
+            <h2 class="card-header text-center">University of the People</h2>
+        <div class="card-body">
+
+
+            <div class="row justify-content-md-center">
+                <div class="col-md-5">
+                    <form class="mt-3" action="https://my.uopeople.edu/login/index.php" method="post" id="login">
+                        <input id="anchor" type="hidden" name="anchor" value="">
+                        <script>document.getElementById('anchor').value = location.hash;</script>
+                        <input type="hidden" name="logintoken" value="sQSsr6BufDre1YJRLU2spk8d6ZxAhS2s">
+                        <div class="form-group">
+                            <label for="username" class="sr-only">
+                                    Username
+                            </label>
+                            <input type="text" name="username" id="username"
+                                class="form-control"
+                                value=""
+                                placeholder="Username"
+                                autocomplete="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="sr-only">Password</label>
+                            <input type="password" name="password" id="password" value=""
+                                class="form-control"
+                                placeholder="Password"
+                                autocomplete="current-password">
+                        </div>
+                            <div class="rememberpass mt-3">
+                                <input type="checkbox" name="rememberusername" id="rememberusername" value="1"  />
+                                <label for="rememberusername">Remember username</label>
+                            </div>
+
+                        <button type="submit" class="btn btn-primary btn-block mt-3" id="loginbtn">Log in</button>
+                    </form>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="forgetpass mt-3">
+                        <p><a href="https://my.uopeople.edu/login/forgot_password.php">Forgotten your username or password?</a></p>
+                    </div>
+
+                    <div class="mt-3">
+                        <i>As a member of the UoPeople community, I agree to participate in an inclusive academic environment that is built on civil discourse and fosters mutual respect, promotes equality, and celebrates diversity. I pledge to be accountable for my words and actions, and to not engage in discriminatory behavior of any kind.<br><br>
+Through the entry of my username and password I affirm that I am the student who enrolled in this course for the duration of the entire term.  Furthermore, I affirm that I understand and agree to follow the regulations regarding the Code of Academic Integrity and General Code of Conduct described in the Catalog; I promise not to participate in any form of academic dishonesty including, but not limited to plagiarism, copying, cheating, sharing my work (both publicly and privately), and/or the submission of work other than my own.  Failure to abide by the regulations may result in disciplinary action up to expulsion from the university.</i><br><br>Cookies must be enabled in your browser
+                        <a class="btn btn-link p-0" role="button"
+    data-container="body" data-toggle="popover"
+    data-placement="right" data-content="&lt;div class=&quot;no-overflow&quot;&gt;&lt;p&gt;Two cookies are used on this site:&lt;/p&gt;
+
+&lt;p&gt;The essential one is the session cookie, usually called MoodleSession. You must allow this cookie in your browser to provide continuity and to remain logged in when browsing the site. When you log out or close the browser, this cookie is destroyed (in your browser and on the server).&lt;/p&gt;
+
+&lt;p&gt;The other cookie is purely for convenience, usually called MOODLEID or similar. It just remembers your username in the browser. This means that when you return to this site, the username field on the login page is already filled in for you. It is safe to refuse this cookie - you will just have to retype your username each time you log in.&lt;/p&gt;
+&lt;/div&gt; "
+    data-html="true" tabindex="0" data-trigger="focus">
+  <img class="icon " alt="Help with &lt;i&gt;As a member of the UoPeople community, I agree to participate in an inclusive academic environment that is built on civil discourse and fosters mutual respect, promotes equality, and celebrates diversity. I pledge to be accountable for my words and actions, and to not engage in discriminatory behavior of any kind.&lt;br&gt;&lt;br&gt;
+Through the entry of my username and password I affirm that I am the student who enrolled in this course for the duration of the entire term.  Furthermore, I affirm that I understand and agree to follow the regulations regarding the Code of Academic Integrity and General Code of Conduct described in the Catalog; I promise not to participate in any form of academic dishonesty including, but not limited to plagiarism, copying, cheating, sharing my work (both publicly and privately), and/or the submission of work other than my own.  Failure to abide by the regulations may result in disciplinary action up to expulsion from the university.&lt;/i&gt;&lt;br&gt;&lt;br&gt;Cookies must be enabled in your browser" title="Help with &lt;i&gt;As a member of the UoPeople community, I agree to participate in an inclusive academic environment that is built on civil discourse and fosters mutual respect, promotes equality, and celebrates diversity. I pledge to be accountable for my words and actions, and to not engage in discriminatory behavior of any kind.&lt;br&gt;&lt;br&gt;
+Through the entry of my username and password I affirm that I am the student who enrolled in this course for the duration of the entire term.  Furthermore, I affirm that I understand and agree to follow the regulations regarding the Code of Academic Integrity and General Code of Conduct described in the Catalog; I promise not to participate in any form of academic dishonesty including, but not limited to plagiarism, copying, cheating, sharing my work (both publicly and privately), and/or the submission of work other than my own.  Failure to abide by the regulations may result in disciplinary action up to expulsion from the university.&lt;/i&gt;&lt;br&gt;&lt;br&gt;Cookies must be enabled in your browser" src="https://my.uopeople.edu/theme/image.php/lambda/core/1580665829/help" />
+</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div></div>        </section>
+    </div>
+    
+    <a href="#top" class="back-to-top"><i class="fa fa-chevron-circle-up fa-3x"></i><span class="lambda-sr-only">Back</span></a>
+    
+</div>
+
+	<footer id="page-footer" class="container-fluid" >
+			<div class="row-fluid">
+		<aside id="block-region-footer-left" class="span4 block-region" data-blockregion="footer-left" data-droptarget="1"></aside><aside id="block-region-footer-middle" class="span4 block-region" data-blockregion="footer-middle" data-droptarget="1"></aside><aside id="block-region-footer-right" class="span4 block-region" data-blockregion="footer-right" data-droptarget="1"></aside> 	</div>
+
+	<div class="footerlinks">
+    	<div class="row-fluid">
+    		<p class="helplink"></p>
+    		<div class="footnote"><p style="text-align:center;"><a href="https://my.uopeople.edu/mod/book/view.php?id=144740&amp;chapterid=152710">Disclaimer Regarding Use of Course Material </a></p><p style="text-align:center;">University of the People is a 501(c)(3) not for profit organization. Contributions are tax deductible to the extent permitted by law.</p><p style="text-align:center;">Copyright © University of the People 2020. All rights reserved.</p><p style="text-align:center;"></p></div>		</div>
+        
+                
+   	</div><div class="logininfo">You are not logged in.</div>	</footer>
+
+    
+<style>
+#sidebar .block-region,
+.sidebar-open #sidebar-btn,
+#sidebar-btn {
+    transition: 100ms;
+}
+
+body,
+body.sidebar-open {
+    transition: padding-left 100ms;
+}
+@media screen and (max-width: 1300px) {
+    .sidebar-open #region-bs-main-and-pre.span9,
+    .sidebar-open #block-region-side-post.span3 {
+        float: none;
+        display: block;
+        width: 100%;
+    }   
+}
+
+@media screen and (max-width: 1100px) {
+    #region-bs-main-and-pre.span9,
+    #block-region-side-post.span3 {
+        float: none;
+        display: block;
+        width: 100%;
+    }   
+}
+</style><script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://my.uopeople.edu/lib/requirejs.php/1580665829/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://my.uopeople.edu/lib/javascript.php/1580665829/lib/jquery/jquery-3.2.1.min',
+        jqueryui: 'https://my.uopeople.edu/lib/javascript.php/1580665829/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://my.uopeople.edu/lib/javascript.php/1580665829/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://my.uopeople.edu/lib/javascript.php/1580665829/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.util.js_pending("core/first");require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://my.uopeople.edu/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("en",{
+ "Audio Player": "Audio Player",
+ "Video Player": "Video Player",
+ "Play": "Play",
+ "Pause": "Pause",
+ "Replay": "Replay",
+ "Current Time": "Current Time",
+ "Duration Time": "Duration Time",
+ "Remaining Time": "Remaining Time",
+ "Stream Type": "Stream Type",
+ "LIVE": "LIVE",
+ "Loaded": "Loaded",
+ "Progress": "Progress",
+ "Progress Bar": "Progress Bar",
+ "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+ "Fullscreen": "Fullscreen",
+ "Non-Fullscreen": "Non-Fullscreen",
+ "Mute": "Mute",
+ "Unmute": "Unmute",
+ "Playback Rate": "Playback Rate",
+ "Subtitles": "Subtitles",
+ "subtitles off": "subtitles off",
+ "Captions": "Captions",
+ "captions off": "captions off",
+ "Chapters": "Chapters",
+ "Descriptions": "Descriptions",
+ "descriptions off": "descriptions off",
+ "Audio Track": "Audio Track",
+ "Volume Level": "Volume Level",
+ "You aborted the media playback": "You aborted the media playback",
+ "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+ "No compatible source was found for this media.": "No compatible source was found for this media.",
+ "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+ "Play Video": "Play Video",
+ "Close": "Close",
+ "Close Modal Dialog": "Close Modal Dialog",
+ "Modal Window": "Modal Window",
+ "This is a modal window": "This is a modal window",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+ ", opens captions settings dialog": ", opens captions settings dialog",
+ ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+ ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+ ", selected": ", selected",
+ "captions settings": "captions settings",
+ "subtitles settings": "subititles settings",
+ "descriptions settings": "descriptions settings",
+ "Text": "Text",
+ "White": "White",
+ "Black": "Black",
+ "Red": "Red",
+ "Green": "Green",
+ "Blue": "Blue",
+ "Yellow": "Yellow",
+ "Magenta": "Magenta",
+ "Cyan": "Cyan",
+ "Background": "Background",
+ "Window": "Window",
+ "Transparent": "Transparent",
+ "Semi-Transparent": "Semi-Transparent",
+ "Opaque": "Opaque",
+ "Font Size": "Font Size",
+ "Text Edge Style": "Text Edge Style",
+ "None": "None",
+ "Raised": "Raised",
+ "Depressed": "Depressed",
+ "Uniform": "Uniform",
+ "Dropshadow": "Dropshadow",
+ "Font Family": "Font Family",
+ "Proportional Sans-Serif": "Proportional Sans-Serif",
+ "Monospace Sans-Serif": "Monospace Sans-Serif",
+ "Proportional Serif": "Proportional Serif",
+ "Monospace Serif": "Monospace Serif",
+ "Casual": "Casual",
+ "Script": "Script",
+ "Small Caps": "Small Caps",
+ "Reset": "Reset",
+ "restore all settings to the default values": "restore all settings to the default values",
+ "Done": "Done",
+ "Caption Settings Dialog": "Caption Settings Dialog",
+ "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+ "End of dialog window.": "End of dialog window."
+});
+
+    });
+});;
+
+
+require(['jquery', 'tool_policy/jquery-eu-cookie-law-popup', 'tool_policy/policyactions'], function($, Popup, ActionsMod) {
+        // Initialise the guest popup.
+        $(document).ready(function() {
+            // Only show message if there is some policy related to guests.
+
+            // Initialise the JS for the modal window which displays the policy versions.
+            ActionsMod.init('[data-action="view-guest"]');
+        });
+});
+
+;
+
+require(['jquery'], function($) {
+    $('#single_select5e381af9a4c3c3').change(function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f5e381af9a4c3c2').submit();
+        }
+    });
+});
+;
+
+            require(['jquery'], function($) {
+                if ($('#username').val()) {
+                    $('#password').focus();
+                } else {
+                    $('#username').focus();
+                }
+            });
+;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script type="text/javascript" src="https://my.uopeople.edu/theme/javascript.php/lambda/1580665829/footer"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","ok":"OK","cancel":"Cancel","morehelp":"More help","loadinghelp":"Loading...","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
+});
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+ M.util.js_pending('random5e381af9a4c3c4'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5e381af9a4c3c4'); });
+})();
+//]]>
+</script>
+
+<!--[if lte IE 9]>
+<script src="https://my.uopeople.edu/theme/lambda/javascript/ie/iefix.js"></script>
+<![endif]-->
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"789f8a0b4d","applicationID":"385082689,39893582,1685232","transactionName":"b1UBZEMAWBZQVRFeVlYfNkJYTloKVl8LGFBWVAZIHxFeFQ==","queueTime":0,"applicationTime":129,"atts":"QxICEgsaSxg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

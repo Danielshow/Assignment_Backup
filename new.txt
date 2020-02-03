@@ -1,0 +1,1 @@
+{'dan': [50], 'tolu': [50], 'pelumi': [50], 'tom': [70], 'will': [70], 'oxford': [70], 'titi': [90], 'bill': [90], 'risi': [90], 'ope': [80], 'dami': [80], 'me': [40], 'esther': [40], 'vic': [30], 'orji': [30]}
